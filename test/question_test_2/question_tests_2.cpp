@@ -6,7 +6,10 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("test")
+TEST_CASE("Test get_kinetic_energy function")
 {
-	REQUIRE(test_config() == true);
+
+	REQUIRE(get_kinetic_energy(10, 9) == 405);
+	REQUIRE(get_kinetic_energy(20, 5) == 250);
+	REQUIRE(get_kinetic_energy(30, 7) == 735);
 }
